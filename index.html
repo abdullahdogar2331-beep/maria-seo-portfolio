@@ -28,6 +28,51 @@
 @media(max-width:760px){.reel-grid{grid-template-columns:1fr}.reel-copy{max-width:560px}.reel-frame{aspect-ratio:4/3}.reel-label{left:16px;bottom:15px}}
 
 
+
+/* Self-contained 30-second SEO showreel */
+.reel-section{background:#edf0e7;overflow:hidden}
+.reel-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:clamp(28px,5vw,70px);align-items:center}
+.reel-copy h2{font-size:clamp(2.5rem,4.5vw,4.2rem);line-height:1.06;letter-spacing:-.05em;margin:14px 0 20px}
+.reel-copy h2 em{color:var(--green);font-weight:500}
+.reel-copy p{color:var(--muted);line-height:1.85;max-width:390px}
+.reel-note{font-size:.8rem!important;margin:18px 0 20px}
+.reel-play{border:0;cursor:pointer;font-family:var(--sans);font-size:.9rem}
+.showreel-player{position:relative;overflow:hidden;min-height:435px;aspect-ratio:1.17/1;border-radius:22px;padding:23px 25px 18px;background:radial-gradient(ellipse at 80% 10%,#37634b 0,transparent 37%),#152d23;color:#f7f6ee;box-shadow:0 28px 65px #182f241f}
+.showreel-top{height:27px;display:flex;justify-content:space-between;align-items:center;font-size:.58rem;letter-spacing:.13em;font-weight:700;color:#e6eee2}
+.showreel-brand{display:flex;align-items:center;gap:8px}.showreel-brand>i,.showreel-live i{display:inline-block;width:7px;height:7px;background:#b8d994;border-radius:50%}.showreel-brand span{color:#93a99a;font-weight:500}
+.showreel-live{border:1px solid #5b7864;border-radius:99px;padding:7px 9px;display:flex;align-items:center;gap:6px;font-size:.53rem}
+.showreel-scenes{position:relative;height:322px;margin-top:16px}
+.show-scene{position:absolute;inset:0;opacity:0;transform:translateY(10px) scale(.99);pointer-events:none;transition:opacity .45s,transform .45s}
+.show-scene.active{opacity:1;transform:none}
+.scene-kicker{font-size:.61rem;letter-spacing:.16em;color:#b6d59a;font-weight:700;margin:10px 0 20px}
+.scene-title{font:500 clamp(1.9rem,3.3vw,3rem)/1.06 var(--serif);letter-spacing:-.045em}
+.scene-title em{color:#c7e6a7;font-weight:500}
+.keyword-search{margin-top:22px;border:1px solid #597162;background:#203d2e;border-radius:10px;padding:13px 14px;display:flex;align-items:center;gap:10px;color:#e9eee5;font-size:.77rem}
+.keyword-search>span{font-size:1.25rem;color:#c7e6a7}.keyword-search b{margin-left:auto;color:#b5c7b5}
+.keyword-chips,.final-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.keyword-chips span,.final-tags span{border:1px solid #55705d;color:#d8e4d4;border-radius:99px;padding:7px 10px;font-size:.63rem}
+.scene-foot{position:absolute;bottom:6px;left:0;right:0;border-top:1px solid #4a6351;padding-top:12px;font-size:.69rem;color:#c0cfc1}
+.page-preview{margin-top:20px;background:#f7f7f0;border-radius:12px;padding:15px;max-width:360px}
+.page-line{height:7px;border-radius:99px;background:#d9dfd4;margin:8px 0;width:90%}.page-line.short{width:38%;background:#9ab88a}.page-line.medium{width:67%;background:#c2d4b7}
+.page-check{font-size:.61rem;color:#2f6242;margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;font-weight:700}
+.audit-list{display:grid;gap:9px;margin-top:22px;max-width:390px}
+.audit-list>div{display:flex;align-items:center;gap:10px;border:1px solid #4a6654;background:#1e3b2c;border-radius:9px;padding:11px;font-size:.68rem}
+.audit-symbol{color:#c8e7a7;font-size:1rem}.audit-list b{margin-left:auto;font-size:.52rem;color:#c8e7a7;letter-spacing:.06em}
+.local-card{display:flex;align-items:center;gap:10px;position:relative;z-index:1;margin-top:18px;background:#f7f7ef;color:#20392a;border-radius:11px;padding:12px}
+.local-pin{width:32px;height:32px;display:grid;place-items:center;border-radius:8px;background:#e3ecd9;color:#2c6945;font-size:1.3rem}
+.local-card>div:nth-child(2){flex:1;min-width:0}.local-card b{display:block;font-size:.72rem}.local-card small{display:block;color:#6b7a6d;font-size:.56rem;margin-top:3px}.local-stars{color:#719b54;font-size:.55rem;letter-spacing:.04em}
+.local-map{position:absolute;right:8px;bottom:8px;width:150px;height:100px;opacity:.7;background:linear-gradient(30deg,transparent 46%,#47664e 47%,#47664e 49%,transparent 50%),linear-gradient(145deg,transparent 40%,#47664e 41%,#47664e 43%,transparent 44%),linear-gradient(90deg,transparent 48%,#47664e 49%,#47664e 51%,transparent 52%);border:1px solid #44634d;border-radius:12px}
+.local-map i{position:absolute;width:6px;height:6px;background:#c6e6a4;border-radius:50%;box-shadow:0 0 0 4px #c6e6a425}.local-map i:nth-child(1){top:19px;left:34px}.local-map i:nth-child(2){top:47px;left:89px}.local-map i:nth-child(3){top:65px;left:49px}.local-map i:nth-child(4){top:24px;right:18px}.local-map b{position:absolute;top:36px;left:60px;font-size:.53rem;background:#c6e6a4;color:#1c3827;padding:5px;border-radius:5px}
+.final-scene{text-align:center}.final-mark{font:italic 3.3rem var(--serif);margin:6px 0 9px;color:#f6f5eb}.final-mark span{color:#c7e6a7}.final-scene .scene-title{font-size:clamp(2.2rem,4vw,3.4rem)}.final-tags{justify-content:center;margin-top:18px}
+.showreel-bottom{display:flex;align-items:center;gap:12px;border-top:1px solid #45604d;padding-top:15px;margin-top:3px}
+.reel-control{width:36px;height:36px;flex:0 0 36px;border:1px solid #6c8872;border-radius:50%;background:#c7e6a7;color:#193a29;cursor:pointer;font-size:.8rem}
+.reel-progress-wrap{flex:1;min-width:0}.reel-progress{height:3px;background:#45604d;border-radius:99px;overflow:hidden}.reel-progress span{display:block;width:0;height:100%;background:#c7e6a7;transition:width .1s linear}
+.reel-timing{display:flex;justify-content:space-between;gap:8px;color:#a8b9aa;font-size:.53rem;letter-spacing:.07em;margin-top:8px}.reel-timing b{color:#f6f5eb;font-weight:600}
+.reel-sound{font-size:.48rem;letter-spacing:.1em;color:#a8b9aa;white-space:nowrap}
+@media(max-width:760px){.reel-grid{grid-template-columns:1fr}.showreel-player{min-height:405px;aspect-ratio:auto;padding:18px}.showreel-scenes{height:300px}.scene-title{font-size:2.35rem}.reel-copy{max-width:560px}.showreel-bottom{gap:9px}.reel-sound{font-size:.43rem}}
+@media(max-width:390px){.showreel-player{padding:14px}.showreel-scenes{height:310px}.scene-title{font-size:2rem}.showreel-brand{font-size:.5rem}.showreel-brand span{display:none}.reel-timing{font-size:.47rem}.local-card{gap:7px}.local-stars{display:none}}
+@media(prefers-reduced-motion:reduce){.show-scene{transition:none}}
+
 /* Editorial portfolio refresh */
 :root{--bg:#f8f7f2;--ink:#1b2922;--muted:#69756d;--green:#20543d;--lime:#d8efb7;--line:#e0e3da;--white:#fffefa}
 body{background:var(--bg);background-image:radial-gradient(#244c3710 .7px,transparent .7px);background-size:8px 8px}
@@ -104,11 +149,28 @@ body{background:var(--bg);background-image:radial-gradient(#244c3710 .7px,transp
 <section class="section" id="process"><div class="wrap"><div class="sectionhead reveal"><div><div class="kicker">How I work</div><h2>A clear path from question to action.</h2></div><p>I keep the process simple: understand your goals, explain what needs work, and agree on clear next steps.</p></div><div class="process"><article class="step reveal"><b>STEP 01</b><h3>Listen</h3><p>Tell me about your business and what you want your website to achieve.</p></article><article class="step reveal"><b>STEP 02</b><h3>Research</h3><p>Check what people search for, your website pages, and any basic technical issues.</p></article><article class="step reveal"><b>STEP 03</b><h3>Prioritize</h3><p>Make a clear list of what to fix first and what can wait.</p></article><article class="step reveal"><b>STEP 04</b><h3>Improve</h3><p>Work through the plan and check what improves over time.</p></article></div><div class="note reveal"><strong>A note on results:</strong> SEO takes time, and results are never guaranteed. I explain the work clearly, share progress honestly, and focus on steady improvements.</div></div></section>
 
 <section class="section reel-section" id="reel"><div class="wrap reel-grid">
-<div class="reel-copy reveal"><div class="kicker">A closer look</div><h2>Thoughtful SEO.<br><em>Real momentum.</em></h2><p>A quick look at the work behind a website that is easier to find — from research to planning and improvements.</p><p class="reel-note">A short workspace film · Tap play to watch</p></div>
-<div class="reel-media reveal"><div class="reel-frame"><video controls playsinline preload="metadata" onerror="this.closest('.reel-frame').classList.add('video-error')" poster="https://images.pexels.com/videos/6172816/pexels-photo-6172816.jpeg?auto=compress&dpr=1&h=750&w=1260" aria-label="Short digital marketing workspace video"><source src="https://videos.pexels.com/video-files/6172816/6172816-hd_1920_1080_30fps.mp4" type="video/mp4">Your browser does not support the video element.</video><span class="reel-chip">SEO • STRATEGY • GROWTH</span><span class="reel-label">The work behind the visibility</span></div></div>
+<div class="reel-copy reveal"><div class="kicker">30-second showreel</div><h2>SEO that helps<br><em>you get noticed.</em></h2><p>A quick visual tour of the four main SEO areas — from better page content to technical fixes and local search.</p><p class="reel-note">30 seconds · No sound · Press play to start</p><button class="pill reel-play" id="reelPlay" type="button">▶ Play showreel</button></div>
+<div class="reel-media reveal"><div class="showreel-player" id="showreelPlayer" aria-label="30-second animated SEO showreel">
+<div class="showreel-top"><span class="showreel-brand"><i></i> MARIA ALI <span>/ SEO STUDIO</span></span><span class="showreel-live"><i></i> SHOWREEL</span></div>
+<div class="showreel-scenes">
+<div class="show-scene active" data-scene="0"><div class="scene-kicker">01 / FIND THE OPPORTUNITY</div><div class="scene-title">Start with<br><em>the right keywords.</em></div><div class="keyword-search"><span>⌕</span> best service in my area <b>↵</b></div><div class="keyword-chips"><span>Keyword research</span><span>Search intent</span><span>Content ideas</span></div><div class="scene-foot">Understand what your customers search for.</div></div>
+<div class="show-scene" data-scene="1"><div class="scene-kicker">02 / IMPROVE THE PAGE</div><div class="scene-title">Make every page<br><em>clear and useful.</em></div><div class="page-preview"><div class="page-line short"></div><div class="page-line medium"></div><div class="page-line"></div><div class="page-check">✓ Clear title <span>✓ Helpful content</span> ✓ Internal links</div></div><div class="scene-foot">On-page SEO turns good pages into better pages.</div></div>
+<div class="show-scene" data-scene="2"><div class="scene-kicker">03 / BUILD A STRONG BASE</div><div class="scene-title">A healthy website<br><em>works behind the scenes.</em></div><div class="audit-list"><div><span class="audit-symbol">✓</span> Mobile-friendly layout <b>CHECK</b></div><div><span class="audit-symbol">✓</span> Search indexing basics <b>CHECK</b></div><div><span class="audit-symbol">✓</span> Helpful page structure <b>CHECK</b></div></div><div class="scene-foot">Technical SEO helps search engines access your site.</div></div>
+<div class="show-scene" data-scene="3"><div class="scene-kicker">04 / BE FOUND NEARBY</div><div class="scene-title">Connect with<br><em>local customers.</em></div><div class="local-card"><div class="local-pin">⌖</div><div><b>Your business</b><small>Local search · Useful details · Consistent info</small></div><span class="local-stars">★★★★★</span></div><div class="local-map"><i></i><i></i><i></i><i></i><i></i><b>YOU</b></div><div class="scene-foot">Local SEO helps nearby people discover your business.</div></div>
+<div class="show-scene final-scene" data-scene="4"><div class="scene-kicker">A SMARTER WAY FORWARD</div><div class="final-mark">m<span>.</span></div><div class="scene-title">Be useful.<br><em>Be discoverable.</em></div><div class="final-tags"><span>On-page</span><span>Off-page</span><span>Technical</span><span>Local SEO</span></div><div class="scene-foot">Thoughtful SEO starts with people.</div></div>
+</div>
+<div class="showreel-bottom"><button class="reel-control" id="reelControl" type="button" aria-label="Play showreel">▶</button><div class="reel-progress-wrap"><div class="reel-progress"><span id="reelProgress"></span></div><div class="reel-timing"><span id="reelStatus">READY TO PLAY</span><span><b id="reelTime">00:00</b> / 00:30</span></div></div><span class="reel-sound">SILENT FILM</span></div>
+</div></div>
 </div></section>
 
 <section class="section" id="contact"><div class="wrap"><div class="contact reveal"><div><div class="kicker">Have a project in mind?</div><h2>Let’s make your website easier to find.</h2><p>Tell me about your website and your goals. We can discuss simple steps to help more people find you.</p></div><a class="pill" href="mailto:mariaalee811@gmail.com?subject=SEO%20project%20inquiry">Email Maria ↗</a></div></div></section>
 </main><footer class="wrap footer"><span>© <span id="year"></span> Maria Ali. Made with intention.</span><a href="mailto:mariaalee811@gmail.com">mariaalee811@gmail.com</a><a href="#home">Back to top ↑</a></footer>
-<script>const menu=document.getElementById('menu'),nav=document.getElementById('navlinks');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));document.getElementById('year').textContent=new Date().getFullYear();if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el))}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))}</script>
+<script>const menu=document.getElementById('menu'),nav=document.getElementById('navlinks');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));document.getElementById('year').textContent=new Date().getFullYear();
+const reelPlayer=document.getElementById('showreelPlayer'),reelPlay=document.getElementById('reelPlay'),reelControl=document.getElementById('reelControl'),reelProgress=document.getElementById('reelProgress'),reelTime=document.getElementById('reelTime'),reelStatus=document.getElementById('reelStatus'),reelScenes=[...document.querySelectorAll('.show-scene')];let reelStartedAt=0,reelElapsed=0,reelFrame=null;
+function formatReelTime(seconds){const n=Math.min(30,Math.floor(seconds));return '00:'+String(n).padStart(2,'0')}
+function paintReel(seconds){const scene=Math.min(4,Math.floor(seconds/6));reelScenes.forEach((item,index)=>item.classList.toggle('active',index===scene));reelProgress.style.width=(seconds/30*100)+'%';reelTime.textContent=formatReelTime(seconds)}
+function stopReel(complete=false){if(reelFrame)cancelAnimationFrame(reelFrame);reelFrame=null;if(complete){reelElapsed=30;paintReel(30);reelScenes.forEach((item,index)=>item.classList.toggle('active',index===4));reelStatus.textContent='SHOWREEL COMPLETE';reelPlay.textContent='↻ Replay showreel';reelControl.textContent='↻';reelControl.setAttribute('aria-label','Replay showreel')}else{reelStatus.textContent='PAUSED';reelPlay.textContent='▶ Resume showreel';reelControl.textContent='▶';reelControl.setAttribute('aria-label','Resume showreel')}}
+function runReel(){if(reelFrame)cancelAnimationFrame(reelFrame);if(reelElapsed>=30)reelElapsed=0;reelStartedAt=performance.now()-reelElapsed*1000;reelStatus.textContent='NOW PLAYING';reelPlay.textContent='Ⅱ Pause showreel';reelControl.textContent='Ⅱ';reelControl.setAttribute('aria-label','Pause showreel');function tick(now){reelElapsed=(now-reelStartedAt)/1000;paintReel(reelElapsed);if(reelElapsed>=30){stopReel(true);return}reelFrame=requestAnimationFrame(tick)}reelFrame=requestAnimationFrame(tick)}
+function toggleReel(){if(reelFrame){stopReel(false)}else{runReel()}}
+reelPlay.addEventListener('click',toggleReel);reelControl.addEventListener('click',toggleReel);if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el))}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))}</script>
 </body></html>
